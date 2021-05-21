@@ -121,3 +121,11 @@ window.addEventListener('click', e => {
     }
 });
 
+window.addEventListener('touchstart', e => {
+    if (e.target.classList == ("far fa-trash-alt deleteBtn")){
+        newUL.deleteTodo(e);
+    }if(e.target.classList == ("far fa-check-circle")){
+        newUL.markComplete(e);
+    }
+
+});
